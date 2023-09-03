@@ -1,3 +1,7 @@
+*{
+
+    scroll-behavior: smooth;
+
 @keyframes slide-right {
     0% {
         transform: translateX(-100%);
