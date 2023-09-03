@@ -72,7 +72,7 @@
                 </a>
             </div>
         </section>
-<div class="animate-on-scroll">
+
          <section id="home">
 
      <div class = "flex justify-around flex-col sm:flex-row intro  m-5 p-5" >
@@ -92,7 +92,7 @@
 
         <span class="relative inline-block animate-slide-right">
             <span class="absolute top-0 left-0 w-0 h-full bg-slate-100"></span>
-            <span class="relative z-10 font-serif">I'am Hema Sagar</span>
+            <span class="relative z-10 font-serif animate-slide-text">I'am Hema Sagar</span>
         </span>
 
 
@@ -291,7 +291,25 @@ Our system combines cutting-edge thermal imaging technology with an automated ha
             Back to Top
         </a>
     </div>
-</div></div>
+</div>
+  <style>
+    @keyframes slide-text {
+        0% {
+            transform: translateX(0); /* Start from the current position */
+        }
+        100% {
+            transform: translateX(100%); /* Slide to the right by the width of the word */
+        }
+    }
+
+    .animate-slide-text {
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: slide-text 2s ease-in-out forwards;
+    }
+</style>
+
  <script>
         document.getElementById('menu-toggle').addEventListener('click', function() {
             var menu = document.getElementById('responsive-menu');
